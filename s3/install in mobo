@@ -1,0 +1,1055 @@
+Authenticating with public key "imported-openssh-key"
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 11.0 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to ubuntu@3.86.182.195                               │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✔  (remote display is forwarded through SSH) │
+     │   • DISPLAY         : ✔  (automatically set on remote server)      │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-1023-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Jan  4 10:04:09 UTC 2019
+
+
+Last login: Tue Oct 23 05:03:45 2018 from 124.123.87.175
+ubuntu@ip-172-31-83-98:~$ aws configure
+
+Command 'aws' not found, but can be installed with:
+
+sudo snap install aws-cli  # version 1.15.71, or
+sudo apt  install awscli
+
+See 'snap info aws-cli' for additional versions.
+
+ubuntu@ip-172-31-83-98:~$ sudo apt install awscli
+E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
+E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+ubuntu@ip-172-31-83-98:~$ sudo -i
+root@ip-172-31-83-98:~# apt install awscli
+E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
+E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+root@ip-172-31-83-98:~# aws ec2 describe-instances
+
+Command 'aws' not found, but can be installed with:
+
+snap install aws-cli  # version 1.15.71, or
+apt  install awscli
+
+See 'snap info aws-cli' for additional versions.
+
+root@ip-172-31-83-98:~# snap install aws-cli
+error: This revision of snap "aws-cli" was published using classic confinement and thus may perform
+       arbitrary system changes outside of the security sandbox that snaps are usually confined to,
+       which may put your system at risk.
+
+       If you understand and want to proceed repeat the command including --classic.
+root@ip-172-31-83-98:~# pip install awscli --upgrade --user
+
+Command 'pip' not found, but can be installed with:
+
+apt install python-pip
+
+root@ip-172-31-83-98:~# apt install python-pip
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libaio1 libcgi-fast-perl libcgi-pm-perl libencode-locale-perl libevent-core-2.1-6 libfcgi-perl
+  libhtml-parser-perl libhtml-tagset-perl libhtml-template-perl libhttp-date-perl
+  libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmysqlclient20 libtimedate-perl
+  liburi-perl mysql-client-5.7 mysql-client-core-5.7 mysql-common mysql-server-5.7
+  mysql-server-core-5.7
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dpkg-dev fakeroot
+  g++ g++-7 gcc gcc-7 gcc-7-base gcc-8-base libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan4 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0
+  libcilkrts5 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl libgcc-7-dev libgcc1
+  libgomp1 libisl19 libitm1 liblsan0 libmpc3 libmpx2 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev libquadmath0 libstdc++-7-dev libstdc++6 libtsan0 libubsan0 linux-libc-dev make
+  manpages-dev python-all python-all-dev python-asn1crypto python-cffi-backend python-crypto
+  python-cryptography python-dbus python-dev python-enum34 python-gi python-idna python-ipaddress
+  python-keyring python-keyrings.alt python-pip-whl python-pkg-resources python-secretstorage
+  python-setuptools python-six python-wheel python-xdg python2.7-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-7-locales debian-keyring g++-multilib g++-7-multilib gcc-7-doc
+  libstdc++6-7-dbg gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-7-multilib
+  libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan4-dbg liblsan0-dbg libtsan0-dbg
+  libubsan0-dbg libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg glibc-doc git bzr libstdc++-7-doc
+  make-doc python-crypto-doc python-cryptography-doc python-cryptography-vectors python-dbus-dbg
+  python-dbus-doc python-enum34-doc python-gi-cairo gnome-keyring libkf5wallet-bin
+  gir1.2-gnomekeyring-1.0 python-fs python-gdata python-keyczar python-secretstorage-doc
+  python-setuptools-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dpkg-dev fakeroot
+  g++ g++-7 gcc gcc-7 gcc-7-base libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan4 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0
+  libcilkrts5 libdpkg-perl libexpat1-dev libfakeroot libfile-fcntllock-perl libgcc-7-dev libgomp1
+  libisl19 libitm1 liblsan0 libmpc3 libmpx2 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev libquadmath0 libstdc++-7-dev libtsan0 libubsan0 linux-libc-dev make manpages-dev
+  python-all python-all-dev python-asn1crypto python-cffi-backend python-crypto python-cryptography
+  python-dbus python-dev python-enum34 python-gi python-idna python-ipaddress python-keyring
+  python-keyrings.alt python-pip python-pip-whl python-pkg-resources python-secretstorage
+  python-setuptools python-six python-wheel python-xdg python2.7-dev
+The following packages will be upgraded:
+  gcc-8-base libgcc1 libstdc++6
+3 upgraded, 68 newly installed, 0 to remove and 90 not upgraded.
+Need to get 70.7 MB of archives.
+After this operation, 218 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-8-base amd64 8.2.0-1ubuntu2~18.04 [18.3 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libstdc++6 amd64 8.2.0-1ubuntu2~18.04 [398 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgcc1 amd64 1:8.2.0-1ubuntu2~18.04 [40.7 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-common amd64 2.30-21ubuntu1~18.04 [193 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbinutils amd64 2.30-21ubuntu1~18.04 [502 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.30-21ubuntu1~18.04 [1855 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils amd64 2.30-21ubuntu1~18.04 [3392 B]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libc-dev-bin amd64 2.27-3ubuntu1 [71.8 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-libc-dev amd64 4.15.0-43.46 [1010 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libc6-dev amd64 2.27-3ubuntu1 [2587 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7-base amd64 7.3.0-27ubuntu1~18.04 [18.9 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libisl19 amd64 0.19-1 [551 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp-7 amd64 7.3.0-27ubuntu1~18.04 [6738 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp amd64 4:7.3.0-3ubuntu2.1 [27.6 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcc1-0 amd64 8.2.0-1ubuntu2~18.04 [39.5 kB]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgomp1 amd64 8.2.0-1ubuntu2~18.04 [76.4 kB]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libitm1 amd64 8.2.0-1ubuntu2~18.04 [28.1 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libatomic1 amd64 8.2.0-1ubuntu2~18.04 [9064 B]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasan4 amd64 7.3.0-27ubuntu1~18.04 [358 kB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblsan0 amd64 8.2.0-1ubuntu2~18.04 [132 kB]
+Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtsan0 amd64 8.2.0-1ubuntu2~18.04 [288 kB]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libubsan0 amd64 7.3.0-27ubuntu1~18.04 [126 kB]
+Get:24 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcilkrts5 amd64 7.3.0-27ubuntu1~18.04 [42.5 kB]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmpx2 amd64 8.2.0-1ubuntu2~18.04 [11.7 kB]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libquadmath0 amd64 8.2.0-1ubuntu2~18.04 [133 kB]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgcc-7-dev amd64 7.3.0-27ubuntu1~18.04 [2380 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7 amd64 7.3.0-27ubuntu1~18.04 [7455 kB]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc amd64 4:7.3.0-3ubuntu2.1 [5184 B]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libstdc++-7-dev amd64 7.3.0-27ubuntu1~18.04 [1463 kB]
+Get:31 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 g++-7 amd64 7.3.0-27ubuntu1~18.04 [7570 kB]
+Get:32 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 g++ amd64 4:7.3.0-3ubuntu2.1 [1572 B]
+Get:33 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 make amd64 4.1-9.1ubuntu1 [154 kB]
+Get:34 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdpkg-perl all 1.19.0.5ubuntu2.1 [211 kB]
+Get:35 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 dpkg-dev all 1.19.0.5ubuntu2.1 [608 kB]
+Get:36 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 build-essential amd64 12.4ubuntu1 [4758 B]
+Get:37 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libfakeroot amd64 1.22-2ubuntu1 [25.9 kB]
+Get:38 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fakeroot amd64 1.22-2ubuntu1 [62.3 kB]
+Get:39 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libalgorithm-diff-perl all 1.19.03-1 [47.6 kB]
+Get:40 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libalgorithm-diff-xs-perl amd64 0.04-5 [11.1 kB]
+Get:41 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:42 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libexpat1-dev amd64 2.2.5-3 [122 kB]
+Get:43 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libfile-fcntllock-perl amd64 0.22-3build2 [33.2 kB]
+Get:44 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython2.7 amd64 2.7.15~rc1-1ubuntu0.1 [1053 kB]
+Get:45 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython2.7-dev amd64 2.7.15~rc1-1ubuntu0.1 [28.3 MB]
+Get:46 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libpython-dev amd64 2.7.15~rc1-1 [7684 B]
+Get:47 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libpython-all-dev amd64 2.7.15~rc1-1 [1092 B]
+Get:48 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 manpages-dev all 4.15-1 [2217 kB]
+Get:49 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-all amd64 2.7.15~rc1-1 [1076 B]
+Get:50 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python2.7-dev amd64 2.7.15~rc1-1ubuntu0.1 [286 kB]
+Get:51 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-dev amd64 2.7.15~rc1-1 [1256 B]
+Get:52 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-all-dev amd64 2.7.15~rc1-1 [1100 B]
+Get:53 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-asn1crypto all 0.24.0-1 [72.7 kB]
+Get:54 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-cffi-backend amd64 1.11.5-1 [63.4 kB]
+Get:55 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-crypto amd64 2.6.1-8ubuntu2 [244 kB]
+Get:56 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-enum34 all 1.1.6-2 [34.8 kB]
+Get:57 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-idna all 2.6-1 [32.4 kB]
+Get:58 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-ipaddress all 1.0.17-1 [18.2 kB]
+Get:59 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-six all 1.11.0-2 [11.3 kB]
+Get:60 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python-cryptography amd64 2.1.4-1ubuntu1.2 [221 kB]
+Get:61 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-dbus amd64 1.2.6-1 [90.2 kB]
+Get:62 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-gi amd64 3.26.1-2 [197 kB]
+Get:63 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-secretstorage all 2.3.1-2 [11.8 kB]
+Get:64 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-keyring all 10.6.0-1 [30.6 kB]
+Get:65 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-keyrings.alt all 3.0-1 [16.7 kB]
+Get:66 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-pip-whl all 9.0.1-2.3~ubuntu1 [1652 kB]
+Get:67 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-pip all 9.0.1-2.3~ubuntu1 [151 kB]
+Get:68 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-pkg-resources all 39.0.1-2 [128 kB]
+Get:69 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python-setuptools all 39.0.1-2 [329 kB]
+Get:70 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 python-wheel all 0.30.0-0.2 [36.4 kB]
+Get:71 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 python-xdg all 0.25-4ubuntu1 [31.3 kB]
+Fetched 70.7 MB in 2s (39.7 MB/s)
+Extracting templates from packages: 100%
+(Reading database ... 112799 files and directories currently installed.)
+Preparing to unpack .../gcc-8-base_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking gcc-8-base:amd64 (8.2.0-1ubuntu2~18.04) over (8-20180414-1ubuntu2) ...
+Setting up gcc-8-base:amd64 (8.2.0-1ubuntu2~18.04) ...
+(Reading database ... 112798 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libstdc++6:amd64 (8.2.0-1ubuntu2~18.04) over (8-20180414-1ubuntu2) ...
+Setting up libstdc++6:amd64 (8.2.0-1ubuntu2~18.04) ...
+(Reading database ... 112798 files and directories currently installed.)
+Preparing to unpack .../libgcc1_1%3a8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libgcc1:amd64 (1:8.2.0-1ubuntu2~18.04) over (1:8-20180414-1ubuntu2) ...
+Setting up libgcc1:amd64 (1:8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package binutils-common:amd64.
+(Reading database ... 112798 files and directories currently installed.)
+Preparing to unpack .../00-binutils-common_2.30-21ubuntu1~18.04_amd64.deb ...
+Unpacking binutils-common:amd64 (2.30-21ubuntu1~18.04) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../01-libbinutils_2.30-21ubuntu1~18.04_amd64.deb ...
+Unpacking libbinutils:amd64 (2.30-21ubuntu1~18.04) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../02-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../03-binutils_2.30-21ubuntu1~18.04_amd64.deb ...
+Unpacking binutils (2.30-21ubuntu1~18.04) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../04-libc-dev-bin_2.27-3ubuntu1_amd64.deb ...
+Unpacking libc-dev-bin (2.27-3ubuntu1) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../05-linux-libc-dev_4.15.0-43.46_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.15.0-43.46) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../06-libc6-dev_2.27-3ubuntu1_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.27-3ubuntu1) ...
+Selecting previously unselected package gcc-7-base:amd64.
+Preparing to unpack .../07-gcc-7-base_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking gcc-7-base:amd64 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package libisl19:amd64.
+Preparing to unpack .../08-libisl19_0.19-1_amd64.deb ...
+Unpacking libisl19:amd64 (0.19-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../09-libmpc3_1.1.0-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.1.0-1) ...
+Selecting previously unselected package cpp-7.
+Preparing to unpack .../10-cpp-7_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking cpp-7 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../11-cpp_4%3a7.3.0-3ubuntu2.1_amd64.deb ...
+Unpacking cpp (4:7.3.0-3ubuntu2.1) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../12-libcc1-0_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../13-libgomp1_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libgomp1:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../14-libitm1_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libitm1:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../15-libatomic1_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libatomic1:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libasan4:amd64.
+Preparing to unpack .../16-libasan4_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking libasan4:amd64 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../17-liblsan0_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking liblsan0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../18-libtsan0_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libtsan0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../19-libubsan0_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking libubsan0:amd64 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../20-libcilkrts5_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking libcilkrts5:amd64 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package libmpx2:amd64.
+Preparing to unpack .../21-libmpx2_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libmpx2:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../22-libquadmath0_8.2.0-1ubuntu2~18.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Selecting previously unselected package libgcc-7-dev:amd64.
+Preparing to unpack .../23-libgcc-7-dev_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking libgcc-7-dev:amd64 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package gcc-7.
+Preparing to unpack .../24-gcc-7_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking gcc-7 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../25-gcc_4%3a7.3.0-3ubuntu2.1_amd64.deb ...
+Unpacking gcc (4:7.3.0-3ubuntu2.1) ...
+Selecting previously unselected package libstdc++-7-dev:amd64.
+Preparing to unpack .../26-libstdc++-7-dev_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking libstdc++-7-dev:amd64 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package g++-7.
+Preparing to unpack .../27-g++-7_7.3.0-27ubuntu1~18.04_amd64.deb ...
+Unpacking g++-7 (7.3.0-27ubuntu1~18.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../28-g++_4%3a7.3.0-3ubuntu2.1_amd64.deb ...
+Unpacking g++ (4:7.3.0-3ubuntu2.1) ...
+Selecting previously unselected package make.
+Preparing to unpack .../29-make_4.1-9.1ubuntu1_amd64.deb ...
+Unpacking make (4.1-9.1ubuntu1) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../30-libdpkg-perl_1.19.0.5ubuntu2.1_all.deb ...
+Unpacking libdpkg-perl (1.19.0.5ubuntu2.1) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../31-dpkg-dev_1.19.0.5ubuntu2.1_all.deb ...
+Unpacking dpkg-dev (1.19.0.5ubuntu2.1) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../32-build-essential_12.4ubuntu1_amd64.deb ...
+Unpacking build-essential (12.4ubuntu1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../33-libfakeroot_1.22-2ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.22-2ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../34-fakeroot_1.22-2ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.22-2ubuntu1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../35-libalgorithm-diff-perl_1.19.03-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.03-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../36-libalgorithm-diff-xs-perl_0.04-5_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-5) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../37-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../38-libexpat1-dev_2.2.5-3_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.2.5-3) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../39-libfile-fcntllock-perl_0.22-3build2_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3build2) ...
+Selecting previously unselected package libpython2.7:amd64.
+Preparing to unpack .../40-libpython2.7_2.7.15~rc1-1ubuntu0.1_amd64.deb ...
+Unpacking libpython2.7:amd64 (2.7.15~rc1-1ubuntu0.1) ...
+Selecting previously unselected package libpython2.7-dev:amd64.
+Preparing to unpack .../41-libpython2.7-dev_2.7.15~rc1-1ubuntu0.1_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.15~rc1-1ubuntu0.1) ...
+Selecting previously unselected package libpython-dev:amd64.
+Preparing to unpack .../42-libpython-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking libpython-dev:amd64 (2.7.15~rc1-1) ...
+Selecting previously unselected package libpython-all-dev:amd64.
+Preparing to unpack .../43-libpython-all-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking libpython-all-dev:amd64 (2.7.15~rc1-1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../44-manpages-dev_4.15-1_all.deb ...
+Unpacking manpages-dev (4.15-1) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../45-python-all_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-all (2.7.15~rc1-1) ...
+Selecting previously unselected package python2.7-dev.
+Preparing to unpack .../46-python2.7-dev_2.7.15~rc1-1ubuntu0.1_amd64.deb ...
+Unpacking python2.7-dev (2.7.15~rc1-1ubuntu0.1) ...
+Selecting previously unselected package python-dev.
+Preparing to unpack .../47-python-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-dev (2.7.15~rc1-1) ...
+Selecting previously unselected package python-all-dev.
+Preparing to unpack .../48-python-all-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-all-dev (2.7.15~rc1-1) ...
+Selecting previously unselected package python-asn1crypto.
+Preparing to unpack .../49-python-asn1crypto_0.24.0-1_all.deb ...
+Unpacking python-asn1crypto (0.24.0-1) ...
+Selecting previously unselected package python-cffi-backend.
+Preparing to unpack .../50-python-cffi-backend_1.11.5-1_amd64.deb ...
+Unpacking python-cffi-backend (1.11.5-1) ...
+Selecting previously unselected package python-crypto.
+Preparing to unpack .../51-python-crypto_2.6.1-8ubuntu2_amd64.deb ...
+Unpacking python-crypto (2.6.1-8ubuntu2) ...
+Selecting previously unselected package python-enum34.
+Preparing to unpack .../52-python-enum34_1.1.6-2_all.deb ...
+Unpacking python-enum34 (1.1.6-2) ...
+Selecting previously unselected package python-idna.
+Preparing to unpack .../53-python-idna_2.6-1_all.deb ...
+Unpacking python-idna (2.6-1) ...
+Selecting previously unselected package python-ipaddress.
+Preparing to unpack .../54-python-ipaddress_1.0.17-1_all.deb ...
+Unpacking python-ipaddress (1.0.17-1) ...
+Selecting previously unselected package python-six.
+Preparing to unpack .../55-python-six_1.11.0-2_all.deb ...
+Unpacking python-six (1.11.0-2) ...
+Selecting previously unselected package python-cryptography.
+Preparing to unpack .../56-python-cryptography_2.1.4-1ubuntu1.2_amd64.deb ...
+Unpacking python-cryptography (2.1.4-1ubuntu1.2) ...
+Selecting previously unselected package python-dbus.
+Preparing to unpack .../57-python-dbus_1.2.6-1_amd64.deb ...
+Unpacking python-dbus (1.2.6-1) ...
+Selecting previously unselected package python-gi.
+Preparing to unpack .../58-python-gi_3.26.1-2_amd64.deb ...
+Unpacking python-gi (3.26.1-2) ...
+Selecting previously unselected package python-secretstorage.
+Preparing to unpack .../59-python-secretstorage_2.3.1-2_all.deb ...
+Unpacking python-secretstorage (2.3.1-2) ...
+Selecting previously unselected package python-keyring.
+Preparing to unpack .../60-python-keyring_10.6.0-1_all.deb ...
+Unpacking python-keyring (10.6.0-1) ...
+Selecting previously unselected package python-keyrings.alt.
+Preparing to unpack .../61-python-keyrings.alt_3.0-1_all.deb ...
+Unpacking python-keyrings.alt (3.0-1) ...
+Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../62-python-pip-whl_9.0.1-2.3~ubuntu1_all.deb ...
+Unpacking python-pip-whl (9.0.1-2.3~ubuntu1) ...
+Selecting previously unselected package python-pip.
+Preparing to unpack .../63-python-pip_9.0.1-2.3~ubuntu1_all.deb ...
+Unpacking python-pip (9.0.1-2.3~ubuntu1) ...
+Selecting previously unselected package python-pkg-resources.
+Preparing to unpack .../64-python-pkg-resources_39.0.1-2_all.deb ...
+Unpacking python-pkg-resources (39.0.1-2) ...
+Selecting previously unselected package python-setuptools.
+Preparing to unpack .../65-python-setuptools_39.0.1-2_all.deb ...
+Unpacking python-setuptools (39.0.1-2) ...
+Selecting previously unselected package python-wheel.
+Preparing to unpack .../66-python-wheel_0.30.0-0.2_all.deb ...
+Unpacking python-wheel (0.30.0-0.2) ...
+Selecting previously unselected package python-xdg.
+Preparing to unpack .../67-python-xdg_0.25-4ubuntu1_all.deb ...
+Unpacking python-xdg (0.25-4ubuntu1) ...
+Setting up libquadmath0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up python-idna (2.6-1) ...
+Setting up libgomp1:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up libatomic1:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up python-pip-whl (9.0.1-2.3~ubuntu1) ...
+Setting up libcc1-0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up python-asn1crypto (0.24.0-1) ...
+Setting up make (4.1-9.1ubuntu1) ...
+Setting up python-crypto (2.6.1-8ubuntu2) ...
+Setting up libtsan0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up python-wheel (0.30.0-0.2) ...
+Setting up linux-libc-dev:amd64 (4.15.0-43.46) ...
+Setting up libdpkg-perl (1.19.0.5ubuntu2.1) ...
+Setting up python-pkg-resources (39.0.1-2) ...
+Setting up liblsan0:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up gcc-7-base:amd64 (7.3.0-27ubuntu1~18.04) ...
+Setting up binutils-common:amd64 (2.30-21ubuntu1~18.04) ...
+Setting up libfile-fcntllock-perl (0.22-3build2) ...
+Setting up python-cffi-backend (1.11.5-1) ...
+Setting up libmpx2:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up python-gi (3.26.1-2) ...
+Setting up python-six (1.11.0-2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libfakeroot:amd64 (1.22-2ubuntu1) ...
+Setting up python-enum34 (1.1.6-2) ...
+Setting up libpython2.7:amd64 (2.7.15~rc1-1ubuntu0.1) ...
+Setting up libalgorithm-diff-perl (1.19.03-1) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up libmpc3:amd64 (1.1.0-1) ...
+Setting up libc-dev-bin (2.27-3ubuntu1) ...
+Setting up python-dbus (1.2.6-1) ...
+Setting up python-ipaddress (1.0.17-1) ...
+Setting up manpages-dev (4.15-1) ...
+Setting up python-pip (9.0.1-2.3~ubuntu1) ...
+Setting up libc6-dev:amd64 (2.27-3ubuntu1) ...
+Setting up python-all (2.7.15~rc1-1) ...
+Setting up libitm1:amd64 (8.2.0-1ubuntu2~18.04) ...
+Setting up python-xdg (0.25-4ubuntu1) ...
+Setting up libisl19:amd64 (0.19-1) ...
+Setting up python-setuptools (39.0.1-2) ...
+Setting up libasan4:amd64 (7.3.0-27ubuntu1~18.04) ...
+Setting up libbinutils:amd64 (2.30-21ubuntu1~18.04) ...
+Setting up libcilkrts5:amd64 (7.3.0-27ubuntu1~18.04) ...
+Setting up libubsan0:amd64 (7.3.0-27ubuntu1~18.04) ...
+Setting up fakeroot (1.22-2ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up python-keyrings.alt (3.0-1) ...
+Setting up libgcc-7-dev:amd64 (7.3.0-27ubuntu1~18.04) ...
+Setting up cpp-7 (7.3.0-27ubuntu1~18.04) ...
+Setting up libstdc++-7-dev:amd64 (7.3.0-27ubuntu1~18.04) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-5) ...
+Setting up python-cryptography (2.1.4-1ubuntu1.2) ...
+Setting up libexpat1-dev:amd64 (2.2.5-3) ...
+Setting up libpython2.7-dev:amd64 (2.7.15~rc1-1ubuntu0.1) ...
+Setting up python2.7-dev (2.7.15~rc1-1ubuntu0.1) ...
+Setting up binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04) ...
+Setting up python-secretstorage (2.3.1-2) ...
+Setting up cpp (4:7.3.0-3ubuntu2.1) ...
+Setting up libpython-dev:amd64 (2.7.15~rc1-1) ...
+Setting up python-keyring (10.6.0-1) ...
+Setting up python-dev (2.7.15~rc1-1) ...
+Setting up libpython-all-dev:amd64 (2.7.15~rc1-1) ...
+Setting up python-all-dev (2.7.15~rc1-1) ...
+Setting up binutils (2.30-21ubuntu1~18.04) ...
+Setting up gcc-7 (7.3.0-27ubuntu1~18.04) ...
+Setting up g++-7 (7.3.0-27ubuntu1~18.04) ...
+Setting up gcc (4:7.3.0-3ubuntu2.1) ...
+Setting up dpkg-dev (1.19.0.5ubuntu2.1) ...
+Setting up g++ (4:7.3.0-3ubuntu2.1) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.4ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+root@ip-172-31-83-98:~# pip install awscli
+Collecting awscli
+  Downloading https://files.pythonhosted.org/packages/b3/92/df77127fbefccadd30f1c9a601885a657af2a6731d530f1f908fee56fcca/awscli-1.16.83-py2.py3-none-any.whl (1.4MB)
+    100% |████████████████████████████████| 1.4MB 879kB/s
+Collecting botocore==1.12.73 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/08/e6/16cf28ce4cc30bc32926250e35dcba72d7c47048fa91db131bf06c749855/botocore-1.12.73-py2.py3-none-any.whl (5.2MB)
+    100% |████████████████████████████████| 5.2MB 230kB/s
+Collecting docutils>=0.10 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/50/09/c53398e0005b11f7ffb27b7aa720c617aba53be4fb4f4f3f06b9b5c60f28/docutils-0.14-py2-none-any.whl (543kB)
+    100% |████████████████████████████████| 552kB 2.3MB/s
+Collecting PyYAML<=3.13,>=3.10 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz (270kB)
+    100% |████████████████████████████████| 276kB 4.0MB/s
+Collecting rsa<=3.5.0,>=3.1.2 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/e1/ae/baedc9cb175552e95f3395c43055a6a5e125ae4d48a1d7a924baca83e92e/rsa-3.4.2-py2.py3-none-any.whl (46kB)
+    100% |████████████████████████████████| 51kB 9.9MB/s
+Collecting colorama<=0.3.9,>=0.2.5 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb22429512708fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting s3transfer<0.2.0,>=0.1.12 (from awscli)
+  Downloading https://files.pythonhosted.org/packages/d7/14/2a0004d487464d120c9fb85313a75cd3d71a7506955be458eebfe19a6b1d/s3transfer-0.1.13-py2.py3-none-any.whl (59kB)
+    100% |████████████████████████████████| 61kB 9.9MB/s
+Collecting jmespath<1.0.0,>=0.7.1 (from botocore==1.12.73->awscli)
+  Downloading https://files.pythonhosted.org/packages/b7/31/05c8d001f7f87f0f07289a5fc0fc3832e9a57f2dbd4d3b0fee70e0d51365/jmespath-0.9.3-py2.py3-none-any.whl
+Collecting python-dateutil<3.0.0,>=2.1; python_version >= "2.7" (from botocore==1.12.73->awscli)
+  Downloading https://files.pythonhosted.org/packages/74/68/d87d9b36af36f44254a8d512cbfc48369103a3b9e474be9bdfe536abfc45/python_dateutil-2.7.5-py2.py3-none-any.whl (225kB)
+    100% |████████████████████████████████| 235kB 5.1MB/s
+Collecting urllib3<1.25,>=1.20; python_version == "2.7" (from botocore==1.12.73->awscli)
+  Downloading https://files.pythonhosted.org/packages/62/00/ee1d7de624db8ba7090d1226aebefab96a2c71cd5cfa7629d6ad3f61b79e/urllib3-1.24.1-py2.py3-none-any.whl (118kB)
+    100% |████████████████████████████████| 122kB 8.9MB/s
+Collecting pyasn1>=0.1.3 (from rsa<=3.5.0,>=3.1.2->awscli)
+  Downloading https://files.pythonhosted.org/packages/7b/7c/c9386b82a25115cccf1903441bba3cbadcfae7b678a20167347fa8ded34c/pyasn1-0.4.5-py2.py3-none-any.whl (73kB)
+    100% |████████████████████████████████| 81kB 10.6MB/s
+Collecting futures<4.0.0,>=2.2.0; python_version == "2.6" or python_version == "2.7" (from s3transfer<0.2.0,>=0.1.12->awscli)
+  Downloading https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Requirement already satisfied: six>=1.5 in /usr/lib/python2.7/dist-packages (from python-dateutil<3.0.0,>=2.1; python_version >= "2.7"->botocore==1.12.73->awscli)
+Building wheels for collected packages: PyYAML
+  Running setup.py bdist_wheel for PyYAML ... done
+  Stored in directory: /root/.cache/pip/wheels/ad/da/0c/74eb680767247273e2cf2723482cb9c924fe70af57c334513f
+Successfully built PyYAML
+Installing collected packages: jmespath, docutils, python-dateutil, urllib3, botocore, PyYAML, pyasn1, rsa, colorama, futures, s3transfer, awscli
+Successfully installed PyYAML-3.13 awscli-1.16.83 botocore-1.12.73 colorama-0.3.9 docutils-0.14 futures-3.2.0 jmespath-0.9.3 pyasn1-0.4.5 python-dateutil-2.7.5 rsa-3.4.2 s3transfer-0.1.13 urllib3-1.24.1
+root@ip-172-31-83-98:~# aws sonfigure
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument command: Invalid choice, valid choices are:
+
+acm                                      | acm-pca
+alexaforbusiness                         | amplify
+apigateway                               | apigatewaymanagementapi
+apigatewayv2                             | application-autoscaling
+appmesh                                  | appstream
+appsync                                  | athena
+autoscaling                              | autoscaling-plans
+batch                                    | budgets
+ce                                       | chime
+cloud9                                   | clouddirectory
+cloudformation                           | cloudfront
+cloudhsm                                 | cloudhsmv2
+cloudsearch                              | cloudsearchdomain
+cloudtrail                               | cloudwatch
+codebuild                                | codecommit
+codepipeline                             | codestar
+cognito-identity                         | cognito-idp
+cognito-sync                             | comprehend
+comprehendmedical                        | connect
+cur                                      | datapipeline
+datasync                                 | dax
+devicefarm                               | directconnect
+discovery                                | dlm
+dms                                      | ds
+dynamodb                                 | dynamodbstreams
+ec2                                      | ecr
+ecs                                      | efs
+eks                                      | elasticache
+elasticbeanstalk                         | elastictranscoder
+elb                                      | elbv2
+emr                                      | es
+events                                   | firehose
+fms                                      | fsx
+gamelift                                 | glacier
+globalaccelerator                        | glue
+greengrass                               | guardduty
+health                                   | iam
+importexport                             | inspector
+iot                                      | iot-data
+iot-jobs-data                            | iot1click-devices
+iot1click-projects                       | iotanalytics
+kafka                                    | kinesis
+kinesis-video-archived-media             | kinesis-video-media
+kinesisanalytics                         | kinesisanalyticsv2
+kinesisvideo                             | kms
+lambda                                   | lex-models
+lex-runtime                              | license-manager
+lightsail                                | logs
+machinelearning                          | macie
+marketplace-entitlement                  | marketplacecommerceanalytics
+mediaconnect                             | mediaconvert
+medialive                                | mediapackage
+mediastore                               | mediastore-data
+mediatailor                              | meteringmarketplace
+mgh                                      | mobile
+mq                                       | mturk
+neptune                                  | opsworks
+opsworkscm                               | organizations
+pi                                       | pinpoint
+pinpoint-email                           | polly
+pricing                                  | quicksight
+ram                                      | rds
+rds-data                                 | redshift
+rekognition                              | resource-groups
+resourcegroupstaggingapi                 | robomaker
+route53                                  | route53domains
+route53resolver                          | s3control
+sagemaker                                | sagemaker-runtime
+sdb                                      | secretsmanager
+securityhub                              | serverlessrepo
+servicecatalog                           | servicediscovery
+ses                                      | shield
+signer                                   | sms
+sms-voice                                | snowball
+sns                                      | sqs
+ssm                                      | stepfunctions
+storagegateway                           | sts
+support                                  | swf
+transcribe                               | transfer
+translate                                | waf
+waf-regional                             | workdocs
+workmail                                 | workspaces
+xray                                     | s3api
+s3                                       | configure
+deploy                                   | configservice
+opsworks-cm                              | runtime.sagemaker
+history                                  | help
+
+
+Invalid choice: 'sonfigure', maybe you meant:
+
+  * configure
+root@ip-172-31-83-98:~# aws configure
+AWS Access Key ID [None]: AKIAIYTLX5KKLG7JYRSA
+AWS Secret Access Key [None]: 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
+Default region name [None]: US East (N. Virginia)
+Default output format [None]: json
+root@ip-172-31-83-98:~# aws s3 mb bukt537
+
+Invalid endpoint: https://s3.US East (N. Virginia).amazonaws.com
+root@ip-172-31-83-98:~# aws configure
+AWS Access Key ID [****************YRSA]:
+AWS Secret Access Key [****************41Ne]:
+Default region name [US East (N. Virginia)]: us-east-1
+Default output format [json]:
+root@ip-172-31-83-98:~# aws s3 mb bukt537
+
+<S3Uri>
+Error: Invalid argument type
+root@ip-172-31-83-98:~# aws configure
+AWS Access Key ID [****************YRSA]:
+AWS Secret Access Key [****************41Ne]:
+Default region name [us-east-1]:
+Default output format [json]:
+root@ip-172-31-83-98:~# aws s3 mb bwe
+
+<S3Uri>
+Error: Invalid argument type
+root@ip-172-31-83-98:~# aws s3 mb s3://raja
+make_bucket failed: s3://raja An error occurred (IllegalLocationConstraintException) when calling the CreateBucket operation: The unspecified location constraint is incompatible for the region specific endpoint this request was sent to.
+root@ip-172-31-83-98:~# aws configure
+AWS Access Key ID [****************YRSA]:
+AWS Secret Access Key [****************41Ne]:
+Default region name [us-east-1]:
+Default output format [json]:
+root@ip-172-31-83-98:~# aws s3 mb s3://raja3
+make_bucket: raja3
+root@ip-172-31-83-98:~# aws s3 ls s3://raja3
+root@ip-172-31-83-98:~# ls
+abc  abc.txt  hello  snap  xyz.txt
+root@ip-172-31-83-98:~# pwd
+/root
+root@ip-172-31-83-98:~# aws s3 cp //root/abc.txt s3://raja3
+upload: ./abc.txt to s3://raja3/abc.txt
+root@ip-172-31-83-98:~# aws s3 ls s3://raja3
+2019-01-04 10:15:52          0 abc.txt
+root@ip-172-31-83-98:~# aws s3 rm abc.txt s3://raja3
+
+Unknown options: s3://raja3
+root@ip-172-31-83-98:~# aws s3 delete abc.txt s3://raja3
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument subcommand: Invalid choice, valid choices are:
+
+ls                                       | website
+cp                                       | mv
+rm                                       | sync
+mb                                       | rb
+presign
+root@ip-172-31-83-98:~# aws s3 rm abc.txt s3://raja3
+
+Unknown options: s3://raja3
+root@ip-172-31-83-98:~# aws s3  s3://raja3 rm abc.txt
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument subcommand: Invalid choice, valid choices are:
+
+ls                                       | website
+cp                                       | mv
+rm                                       | sync
+mb                                       | rb
+presign
+root@ip-172-31-83-98:~# aws ec2 describe-instances
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "PublicDnsName": "ec2-3-83-177-219.compute-1.amazonaws.com",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "EbsOptimized": false,
+                    "LaunchTime": "2019-01-04T09:43:24.000Z",
+                    "PublicIpAddress": "3.83.177.219",
+                    "PrivateIpAddress": "172.31.80.225",
+                    "ProductCodes": [],
+                    "VpcId": "vpc-08a3a6472c2a3e889",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "StateTransitionReason": "",
+                    "InstanceId": "i-056dad7e1e97da169",
+                    "EnaSupport": true,
+                    "ImageId": "ami-0ac019f4fcb7cb7e6",
+                    "PrivateDnsName": "ip-172-31-80-225.ec2.internal",
+                    "KeyName": "aws_pemkey",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "own_security_groups",
+                            "GroupId": "sg-02d22de121e8acab4"
+                        }
+                    ],
+                    "ClientToken": "",
+                    "SubnetId": "subnet-0d74f5d71559a7ed5",
+                    "InstanceType": "t2.micro",
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use",
+                            "MacAddress": "12:22:c1:10:a9:70",
+                            "SourceDestCheck": true,
+                            "VpcId": "vpc-08a3a6472c2a3e889",
+                            "Description": "",
+                            "NetworkInterfaceId": "eni-0d0a956fda504f079",
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-80-225.ec2.internal",
+                                    "PrivateIpAddress": "172.31.80.225",
+                                    "Primary": true,
+                                    "Association": {
+                                        "PublicIp": "3.83.177.219",
+                                        "PublicDnsName": "ec2-3-83-177-219.compute-1.amazonaws.com",
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ],
+                            "PrivateDnsName": "ip-172-31-80-225.ec2.internal",
+                            "Attachment": {
+                                "Status": "attached",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": true,
+                                "AttachmentId": "eni-attach-0942c495c8c51d561",
+                                "AttachTime": "2018-12-14T10:21:26.000Z"
+                            },
+                            "Groups": [
+                                {
+                                    "GroupName": "own_security_groups",
+                                    "GroupId": "sg-02d22de121e8acab4"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "OwnerId": "396541608380",
+                            "PrivateIpAddress": "172.31.80.225",
+                            "SubnetId": "subnet-0d74f5d71559a7ed5",
+                            "Association": {
+                                "PublicIp": "3.83.177.219",
+                                "PublicDnsName": "ec2-3-83-177-219.compute-1.amazonaws.com",
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Placement": {
+                        "Tenancy": "default",
+                        "GroupName": "",
+                        "AvailabilityZone": "us-east-1d"
+                    },
+                    "Hypervisor": "xen",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "Status": "attached",
+                                "DeleteOnTermination": true,
+                                "VolumeId": "vol-0134d6a2d5726eb93",
+                                "AttachTime": "2018-12-14T10:21:26.000Z"
+                            }
+                        }
+                    ],
+                    "Architecture": "x86_64",
+                    "RootDeviceType": "ebs",
+                    "RootDeviceName": "/dev/sda1",
+                    "VirtualizationType": "hvm",
+                    "Tags": [
+                        {
+                            "Value": "jenkins",
+                            "Key": "Name"
+                        }
+                    ],
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "AmiLaunchIndex": 0
+                }
+            ],
+            "ReservationId": "r-013f670f9707c00bd",
+            "Groups": [],
+            "OwnerId": "396541608380"
+        },
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "PublicDnsName": "ec2-3-86-182-195.compute-1.amazonaws.com",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "EbsOptimized": false,
+                    "LaunchTime": "2019-01-04T10:03:17.000Z",
+                    "PublicIpAddress": "3.86.182.195",
+                    "PrivateIpAddress": "172.31.83.98",
+                    "ProductCodes": [],
+                    "VpcId": "vpc-08a3a6472c2a3e889",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "StateTransitionReason": "",
+                    "InstanceId": "i-0d2fdf9f6f1fe5dcf",
+                    "EnaSupport": true,
+                    "ImageId": "ami-0c86ee48a8a5f6a9f",
+                    "PrivateDnsName": "ip-172-31-83-98.ec2.internal",
+                    "KeyName": "aws_pemkey",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "own_security_groups",
+                            "GroupId": "sg-02d22de121e8acab4"
+                        }
+                    ],
+                    "ClientToken": "",
+                    "SubnetId": "subnet-0d74f5d71559a7ed5",
+                    "InstanceType": "t2.micro",
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use",
+                            "MacAddress": "12:94:7f:ee:21:16",
+                            "SourceDestCheck": true,
+                            "VpcId": "vpc-08a3a6472c2a3e889",
+                            "Description": "",
+                            "NetworkInterfaceId": "eni-0ed1c4b15e0c62947",
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-83-98.ec2.internal",
+                                    "PrivateIpAddress": "172.31.83.98",
+                                    "Primary": true,
+                                    "Association": {
+                                        "PublicIp": "3.86.182.195",
+                                        "PublicDnsName": "ec2-3-86-182-195.compute-1.amazonaws.com",
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ],
+                            "PrivateDnsName": "ip-172-31-83-98.ec2.internal",
+                            "Attachment": {
+                                "Status": "attached",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": true,
+                                "AttachmentId": "eni-attach-0f9e1d6bfb705e046",
+                                "AttachTime": "2019-01-04T10:03:17.000Z"
+                            },
+                            "Groups": [
+                                {
+                                    "GroupName": "own_security_groups",
+                                    "GroupId": "sg-02d22de121e8acab4"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "OwnerId": "396541608380",
+                            "PrivateIpAddress": "172.31.83.98",
+                            "SubnetId": "subnet-0d74f5d71559a7ed5",
+                            "Association": {
+                                "PublicIp": "3.86.182.195",
+                                "PublicDnsName": "ec2-3-86-182-195.compute-1.amazonaws.com",
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Placement": {
+                        "Tenancy": "default",
+                        "GroupName": "",
+                        "AvailabilityZone": "us-east-1d"
+                    },
+                    "Hypervisor": "xen",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "Status": "attached",
+                                "DeleteOnTermination": true,
+                                "VolumeId": "vol-0aec4f9d0f65b65cd",
+                                "AttachTime": "2019-01-04T10:03:19.000Z"
+                            }
+                        }
+                    ],
+                    "Architecture": "x86_64",
+                    "RootDeviceType": "ebs",
+                    "RootDeviceName": "/dev/sda1",
+                    "VirtualizationType": "hvm",
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "AmiLaunchIndex": 0
+                }
+            ],
+            "ReservationId": "r-0de848f1bbe435925",
+            "Groups": [],
+            "OwnerId": "396541608380"
+        },
+        {
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "PublicDnsName": "ec2-3-83-14-137.compute-1.amazonaws.com",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "EbsOptimized": false,
+                    "LaunchTime": "2019-01-04T09:43:24.000Z",
+                    "PublicIpAddress": "3.83.14.137",
+                    "PrivateIpAddress": "172.31.83.190",
+                    "ProductCodes": [],
+                    "VpcId": "vpc-08a3a6472c2a3e889",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "StateTransitionReason": "",
+                    "InstanceId": "i-0211dc11797ed108b",
+                    "EnaSupport": true,
+                    "ImageId": "ami-0ac019f4fcb7cb7e6",
+                    "PrivateDnsName": "ip-172-31-83-190.ec2.internal",
+                    "KeyName": "aws_pemkey",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "own_security_groups",
+                            "GroupId": "sg-02d22de121e8acab4"
+                        }
+                    ],
+                    "ClientToken": "",
+                    "SubnetId": "subnet-0d74f5d71559a7ed5",
+                    "InstanceType": "t2.micro",
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use",
+                            "MacAddress": "12:36:d2:69:20:10",
+                            "SourceDestCheck": true,
+                            "VpcId": "vpc-08a3a6472c2a3e889",
+                            "Description": "",
+                            "NetworkInterfaceId": "eni-09dd3a531fccd7fcf",
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-31-83-190.ec2.internal",
+                                    "PrivateIpAddress": "172.31.83.190",
+                                    "Primary": true,
+                                    "Association": {
+                                        "PublicIp": "3.83.14.137",
+                                        "PublicDnsName": "ec2-3-83-14-137.compute-1.amazonaws.com",
+                                        "IpOwnerId": "amazon"
+                                    }
+                                }
+                            ],
+                            "PrivateDnsName": "ip-172-31-83-190.ec2.internal",
+                            "Attachment": {
+                                "Status": "attached",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": true,
+                                "AttachmentId": "eni-attach-076cc5ff94fc0abc9",
+                                "AttachTime": "2019-01-02T08:57:16.000Z"
+                            },
+                            "Groups": [
+                                {
+                                    "GroupName": "own_security_groups",
+                                    "GroupId": "sg-02d22de121e8acab4"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "OwnerId": "396541608380",
+                            "PrivateIpAddress": "172.31.83.190",
+                            "SubnetId": "subnet-0d74f5d71559a7ed5",
+                            "Association": {
+                                "PublicIp": "3.83.14.137",
+                                "PublicDnsName": "ec2-3-83-14-137.compute-1.amazonaws.com",
+                                "IpOwnerId": "amazon"
+                            }
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Placement": {
+                        "Tenancy": "default",
+                        "GroupName": "",
+                        "AvailabilityZone": "us-east-1d"
+                    },
+                    "Hypervisor": "xen",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "Status": "attached",
+                                "DeleteOnTermination": true,
+                                "VolumeId": "vol-0af88970000374528",
+                                "AttachTime": "2019-01-02T08:57:17.000Z"
+                            }
+                        }
+                    ],
+                    "Architecture": "x86_64",
+                    "RootDeviceType": "ebs",
+                    "RootDeviceName": "/dev/sda1",
+                    "VirtualizationType": "hvm",
+                    "Tags": [
+                        {
+                            "Value": "ansible_ubuntu",
+                            "Key": "Name"
+                        }
+                    ],
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "AmiLaunchIndex": 0
+                }
+            ],
+            "ReservationId": "r-0b8b86f7928e6033e",
+            "Groups": [],
+            "OwnerId": "396541608380"
+        }
+    ]
+}
+root@ip-172-31-83-98:~#
