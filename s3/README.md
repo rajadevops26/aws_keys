@@ -8,10 +8,16 @@ MY ACCOUNT USERNAME(LOVERAJARANI)>>>>>>>>My Security Credentials>>>>>>>Access ke
 
 ```
 
-## install steps
-apt install python-pip
-pip install awscli
-aws configure
+## [install steps](https://docs.amazonaws.cn/en_us/cli/latest/userguide/cli-chap-welcome.html)
+- apt install python-pip
+****************************
+- pip install awscli
+-  pip uninstall awscli
+-  pip install awscli --upgrade --user
+-  aws --version
+- which aws
+********************************
+- aws configure
 ```
 AWS Access Key ID [None]: AKIAIYTLX5KKLG7JYRSA
 AWS Secret Access Key [None]: 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
@@ -24,9 +30,15 @@ Default region name [None]: us-east-1
 Default output format [None]: json
 
 ```
-aws s3 mb s3://raja3
-aws s3 ls s3://raja3
-aws s3 cp //root/abc.txt s3://raja3------------> to copy file on s3
+- aws s3 mb s3://raja3
+- aws s3 ls s3://raja3
+- aws s3 cp //root/abc.txt s3://raja3------------> to copy file on s3
+- aws s3 rm s3://raja3/abc.txt
+- aws s3 rm s3://raja3 --recursive
+- aws s3 rm s3://mybucket/ --recursive --exclude "*.jpg"
+- aws s3 rm s3://mybucket/ --recursive --exclude "another/*"
+- aws s3api delete-object --bucket my-bucket --key test.txt------------delete objects
+
 
 COMMANDS
 ********
