@@ -1,0 +1,14 @@
+stop the instance first because .ssh or .ssh/authorized_keys will be disappered to communicate with instance become hard so we restore the keys
+actions-> instance settings-> view/ change user data
+new sialogbox will be appeared
+the below command copy and paste 
+note:
+- ssa-rsa must be .pem key generated public key using putty any other relavent
+
+
+#cloud-config
+ssh_deletekeys: false
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCl4hX/5USa3uJdMkkAUDuonQSQTV+toBb/QvP2TZBpJSAn6DSouY6vrpXYojlaUx11Fuh1+3wvEuC4WP36Srn624pwDtIXzLUVv7PaNqSlZmiZUcCAIuXIUIUT2t0NcGEkw7DDykcIozGrMrl1324N+N68rOyOs0BK7alV+3EqEvV/5996W9L3vKiSAaaCMkS1vcUgKUne9nLb9mcBU0TXU+Y/tUHADE5CCDeCMXLfmnwAsxgIE4Ndtu1H/fBh9qqOpcaEO7q6oVaD8GXKbMUL7muUOq8szSS+uygGfaTpCe60Dn53IdSI7Nw5FTMTKv2tv7XaE/u+6cdGYrt/tHnT imported-openssh-key
+cloud_final_modules:
+  - [ssh, always]
